@@ -1,8 +1,25 @@
 # Web-Scraping-Project-1-
 
-NYC Data Academy Project 1 - WallStreetBets Analysis
+**NYC Data Academy Project 1 - WallStreetBets Analysis
 
-WSB DATA SUBDIRECTORY will contain daily data taken from WSB subreddit:
+To analyze the WSB subreddit for mentions and see if there is any correlation or reaction to the # of mentions to the volume that the stock was traded and compare it to it's historical price.
+
+- WSB daily data will contain data taken from WSB subreddit (these files are located in the 'WSB Data' directory)
+- YAHOO FINANCE DATA taken with scrapper built to take historical financial data (these files are located in the main 'Project 1' directory)
+
+------------------------------------------------------------------------
+
+## 'WSB Analysis.ipynb' (main directory)
+main code where all the analysis was done and charts were built
+## 'Data Cleaning.ipynb' (WSB Data - subdirectory)
+main code for cleaning the WSB data files
+## 'Data Scraping Yahoo Finance Historical Stock Data.ipynb' (main directory)
+main code for pulling data from Yahoo Finance
+
+------------------------------------------------------------------------
+*** DESCRIPTION OF '.csv' FILES ***
+## ex:'20201228-stonks.csv' & 'combined.csv' & 'WSB.csv' in 'WSB Data' sub-directory
+
 (Description of the rows below:)
 
 •	ticker: The stock ticker.
@@ -22,3 +39,18 @@ WSB DATA SUBDIRECTORY will contain daily data taken from WSB subreddit:
 
 Merged all these files and cleaned as 'WSB.csv'  This was the main data file used for the WallStreetBets' portion. (obtained these from Alex)
 
+------------------------------------------------------------------------
+
+## 'GME.csv' & 'GME_volume20.csv' & 'GME_volume21.csv' in main 'Project 1' directory
+
+These files were taken from the yahoo finance scrapper
+
+(Description of the rows below:)
+
+•	Date: The day/month that the current data is from.
+•	Open: open price of the stock
+•	High: The intraday price max for that day/period of the stock
+•	Low: The intraday price min for that day/period of the stock
+•	Close: The closing price for that day/period
+•	Adj Close: Same as the closing price but adjusted for stock splits and similiar events
+•	Volume: Total amount of volume traded in that day/period
